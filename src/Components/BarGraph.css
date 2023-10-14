@@ -1,0 +1,23 @@
+.container:hover .bar-chart {
+  opacity: 0.3;
+}
+
+.container .bar-chart:hover {
+  opacity: 1;
+}
+
+.hovered-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .bar-chart {
+    width: 100%;
+  }
+}
