@@ -1,34 +1,32 @@
 .pie-chart {
-    position: relative;
-  }
-  
-  .percentage-label {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 16px;
-  }
-  
-  .background-circle {
-    fill: none;
-    stroke: #ccc;
-    stroke-width: 12;
-  }
-  
-  .progress-circle-fifty {
-    fill: none;
-    stroke: #5b37b8;
-    stroke-width: 18;
-    transform: rotate(-36deg);
-    transform-origin: 50% 50%;
-  }
+  position: relative;
+}
 
-  .progress-circle-fifteen {
+.percentage-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.background-circle {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 12;
+}
+
+.progress-circle-fifty {
+  fill: none;
+  stroke: url(#gradient);
+  stroke-width: 18;
+  transform: rotate(-36deg);
+  transform-origin: 50% 50%;
+}
+
+.progress-circle-fifteen {
     fill: none;
-    stroke: red;
+    stroke: url(#gradient-fifteen);
     stroke-width: 24;
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
   }
-  
