@@ -85,7 +85,7 @@ const Navbar = () => {
                                         }`}
                                     onClick={() => handleMenuItemClick(index)}
                                 >
-                                    <p className="flex gap-4 text-white text-lg font-medium">
+                                    <p className="flex gap-4 text-slate-200 text-lg font-medium">
                                         <img src={menuItem.icon} alt={`${menuItem.text} Icon`} className='w-8' />
                                         {menuItem.text}
                                     </p>

@@ -1,0 +1,30 @@
+.table-container {
+  overflow-x: auto;
+}
+
+.sell-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sell-table th,
+.sell-table td {
+  white-space: nowrap;
+}
+
+.product-info-container {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+  .sell-table th,
+  .sell-table td {
+    font-size: 14px;
+  }
+
+  .product-info-container {
+
+    max-width: 12rem;
+  }
+}
