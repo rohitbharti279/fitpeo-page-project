@@ -4,13 +4,14 @@ import "./PieChart.css";
 const PieChart = () => {
 
     const percentage = 50;
-    const radius = 52;
+    const radius = 60;
     const circumference = 2 * Math.PI * radius;
     const offset = circumference - (percentage / 100) * circumference;
     const offsetFifteen = circumference - (18 / 100) * circumference;
 
     return (
-        <div className="pie-chart m-5">
+        <div className="pie-chart flex justify-center p-1 m-1">
+            <div className='shadow-lg rounded-full'>
             <svg width="200" height="200">
                 <defs>
                     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -51,6 +52,7 @@ const PieChart = () => {
                 />
 
             </svg>
+            </div>
             <div className="percentage-label text-lg text-center font-extrabold leading-tight mt-0.5">65% <p className='tracking-[-0.1em] text-xs font-medium text-center 
             -my-1 leading-tight'>Total New <p className='-mt-1'>Customers</p></p> </div>
         </div>

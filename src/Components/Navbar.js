@@ -68,15 +68,14 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-[#101039] lg:w-[30%] xl:w-[18%]">
-            <div className="container flex lg:flex-col justify-between md:px-8 lg:px-0">
+        <nav className="bg-[#101039] lg:w-[30%] xl:w-[18%] lg:h-[100vh] overflow-scroll">
+            <div className="container flex lg:flex-col justify-between lg:justify-normal md:px-8 lg:px-0 ">
                 <div className="flex items-center lg:px-2">
                     <img src={dashboardIcon} alt="dashboardIcon" className="lg:w-16"></img>
                     <span className="text-white text-2xl md:text-3xl lg:text-2xl font-semibold -mx-2">Dashboard</span>
                 </div>
 
-                <div className="hidden lg:flex lg:flex-col mt-1 justify-between 
-                h-[90.4vh]">
+                <div className="hidden mt-1 lg:flex lg:flex-col justify-between h-[85vh]">
                     <div>
                         {menuItemData.map((menuItem, index) => (
                             <Router key={index}>
@@ -97,8 +96,9 @@ const Navbar = () => {
                         ))}
                     </div>
 
+                    
                     <Router>
-                        <div className="dropdown mx-3 p-1.5 px-2 mb-7 rounded-md bg-[#272761]">
+                        <div className="dropdown mx-3 p-1.5 px-2 rounded-md bg-[#272761]">
                             <div className="selected-user flex justify-between items-center" onClick={toggleDropdown}>
                                 <div className="flex gap-2 items-center">
                                     <img
@@ -166,7 +166,7 @@ const Navbar = () => {
                         </Link>
                     </Router>
                 ))}
-                
+
                 <Router>
                     <div className="dropdown m-7 mx-4 p-1.5 px-2 rounded-md bg-[#272761]">
                         <div className="selected-user flex justify-between items-center" onClick={toggleDropdown}>

@@ -11,14 +11,14 @@
 
 .background-circle {
   fill: none;
-  stroke: #ccc;
-  stroke-width: 12;
+  stroke: #dedede;
+  stroke-width: 14;
 }
 
 .progress-circle-fifty {
   fill: none;
   stroke: url(#gradient);
-  stroke-width: 18;
+  stroke-width: 20;
   transform: rotate(-36deg);
   transform-origin: 50% 50%;
 }
@@ -26,7 +26,7 @@
 .progress-circle-fifteen {
     fill: none;
     stroke: url(#gradient-fifteen);
-    stroke-width: 24;
+    stroke-width: 28;
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
   }

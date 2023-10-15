@@ -24,7 +24,7 @@ const BarGraph = () => {
         <div className="container ">
             <BarChart 
             width={750}  
-            height={200} 
+            height={210} 
             data={data}
             margin={{ top: 0, right: 0, left: 0, bottom: -7 }}
            
@@ -38,7 +38,7 @@ const BarGraph = () => {
                     onMouseEnter={() => setHoveredBar(true)}
                     onMouseLeave={() => setHoveredBar(false)}
                     className={hoveredBar ? 'bar-chart' : 'bar-chart hovered-bar'}
-                    
+                    barSize={43}
                 />
             </BarChart>
         </div>
