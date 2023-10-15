@@ -81,7 +81,7 @@ const Navbar = () => {
                             <Router key={index}>
                                 <Link
                                     to="/"
-                                    className={`flex justify-between mx-8 p-1.5 rounded-md ${activeMenuItem === index ? "bg-[#272761] scale-110" : ""
+                                    className={`flex justify-between mx-8 p-1.5 rounded-md hover:bg-purple-700 ${activeMenuItem === index ? "bg-[#272761] scale-110" : ""
                                         }`}
                                     onClick={() => handleMenuItemClick(index)}
                                 >
@@ -154,11 +154,11 @@ const Navbar = () => {
                     <Router key={index}>
                         <Link
                             to="/"
-                            className={`flex justify-between mx-8 p-1  rounded-md ${activeMenuItem === index ? "bg-[#272761] scale-105" : ""
+                            className={`flex justify-between mx-8 p-1 rounded-md hover:bg-purple-700 ${activeMenuItem === index ? "bg-[#272761] scale-105" : ""
                                 }`}
                             onClick={() => handleMenuItemClick(index)}
                         >
-                            <p className="flex gap-4 text-white text-xl font-medium">
+                            <p className="flex gap-4 text-slate-200 text-xl font-medium">
                                 <img src={menuItem.icon} alt={`${menuItem.text} Icon`} className='w-8' />
                                 {menuItem.text}
                             </p>
