@@ -22,12 +22,12 @@ const BarGraph = () => {
 
     return (
         <div className="container ">
-            <BarChart 
-            width={750}  
-            height={210} 
-            data={data}
-            margin={{ top: 0, right: 0, left: 0, bottom: -7 }}
-           
+            <BarChart
+                width={750}
+                height={210}
+                data={data}
+                margin={{ top: 0, right: 0, left: 0, bottom: -7 }}
+
             >
                 <XAxis dataKey="name" tickLine={false} axisLine={false} />
                 <Tooltip />

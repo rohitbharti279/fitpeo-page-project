@@ -53,8 +53,8 @@ const PieChart = () => {
 
             </svg>
             </div>
-            <div className="percentage-label text-lg text-center font-extrabold leading-tight mt-0.5">65% <p className='tracking-[-0.1em] text-xs font-medium text-center 
-            -my-1 leading-tight'>Total New <p className='-mt-1'>Customers</p></p> </div>
+            <div className="percentage-label text-lg text-center font-extrabold leading-tight mt-0.5">65% <p className='flex flex-col tracking-[-0.1em] text-xs font-medium text-center 
+            -my-1 leading-tight'>Total New <span className='-mt-1'>Customers</span></p> </div>
         </div>
     );
 };

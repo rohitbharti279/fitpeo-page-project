@@ -1,5 +1,4 @@
 import React from "react";
-import "./Hero.css";
 import search from "./SVG/magnifying-glass-solid.svg";
 import earning from "./SVG/earning.svg";
 import orders from "./SVG/orders.svg";
