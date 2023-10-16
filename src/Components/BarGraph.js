@@ -30,7 +30,7 @@ const BarGraph = () => {
            
             >
                 <XAxis dataKey="name" tickLine={false} axisLine={false} />
-                <Tooltip />
+                {/* <Tooltip /> */}
                 <Bar
                     dataKey="value"
                     fill="#5b37b8"
